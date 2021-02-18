@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animapp</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/> 
+    <link rel="stylesheet" href="./CSS/styles.css" />
+</head>
+<body>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar color="primary">
+
+                <ion-title>
+                    Animapp
+                </ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content> 
+            <ion-grid> 
+                <ion-row>
+                    <ion-col>
+                        <ion-card class="info-poster-img">
+                            <ion-img src="./Pictures/naruto-placeholder.jpg"></ion-img> 
+                        </ion-card>
+                    </ion-col>
+                    <ion-col >
+                        <div class="title-btns">
+                            <ion-row>
+                                <ion-card-title>Naruto</ion-card-title>
+                            </ion-row>
+                            <ion-row>
+                                <ion-col> 
+                                    <ion-element>
+                                        <p> Rating: 12</p>
+                                        <p> Score: 8.9</p> 
+                                    </ion-element>
+                                </ion-col>
+                            </ion-row> 
+                            <ion-row>
+                                <ion-col>
+                                    <ion-button size="medium" >
+                                        <ion-icon button="true" name="add-outline"></ion-icon>
+                                    </ion-button>
+                                </ion-col>
+                                <ion-col>
+                                    <ion-button size="medium">
+                                        <ion-icon button="true" name="star-outline"></ion-icon>
+                                    </ion-button>
+                                </ion-col>
+                            </ion-row>
+                        </div>                                                  
+                    </ion-col>
+                </ion-row>
+                <ion-row> 
+                        <ion-item>
+                            <ion-text>
+                                <ion-label>
+                                    <h1>Synopsis -</h1>  
+                                </ion-label> 
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                </p>
+                            </ion-text> 
+                        </ion-item>                                
+                </ion-row> 
+                <ion-row> 
+                    <ion-col> 
+                        <ion-list> 
+                            <ion-text>
+                                <ion-item>
+                                   Genre:
+                                </ion-item> 
+                                <ion-item>
+                                    Status:
+                                </ion-item>
+                                <ion-item>
+                                   Airdate:
+                                </ion-item>
+                                <ion-item>
+                                    Episode Count:
+                                </ion-item>
+                            </ion-text> 
+                        </ion-list> 
+                    </ion-col>
+                    <ion-col> 
+                        <ion-list> 
+                            <ion-item id="info-genre">
+                               Action/Adventure Fiction
+                            </ion-item> 
+                            <ion-item id="info-status">
+                                Ended
+                            </ion-item>
+                            <ion-item id="info-airdate">
+                               03/10/2002
+                            </ion-item>
+                            <ion-item id="info-count" >
+                                209
+                            </ion-item> 
+                        </ion-list> 
+                    </ion-col>                                
+                </ion-row> 
+                <ion-row> 
+                    <ion-item>
+                        <ion-label>
+                            <h1>Characters</h1>
+                        </ion-label>
+                    </ion-item>
+                </ion-row>  
+                <ion-row>
+                    <ion-col>
+                        <ion-card>
+                            <ion-img class="character-card" src="./Pictures/naruto.jpg"></ion-img> 
+                            <ion-card-content>
+                                    <ion-label>Naruto Uzumaki</ion-label>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col> 
+                    <ion-col>
+                        <ion-card>
+                            <ion-img class="character-card" src="./Pictures/kakashi.jpg"></ion-img> 
+                            <ion-card-content>
+                                    <ion-label>Kakashi Hatake</ion-label>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col>
+                        <ion-card>
+                            <ion-img class="character-card" src="./Pictures/sasuke.jpg"></ion-img> 
+                            <ion-card-content>
+                                    <ion-label>Sasuke Uchiha</ion-label>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col> 
+                    <ion-col>
+                        <ion-card>
+                            <ion-img class="character-card" src="./Pictures/sakura.jpg"></ion-img> 
+                            <ion-card-content>
+                                    <ion-label>Sakura Haruno</ion-label>
+                            </ion-card-content>
+                        </ion-card>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-content> 
+        
+        <ion-footer>
+            <ion-toolbar color="light"> 
+                <ion-grid> 
+                    <ion-row>
+                        <ion-col>
+                            <ion-button fill="clear" expand="block" size="large" href="/index.html" ><ion-icon name="home-outline"></ion-icon></ion-button>
+                        </ion-col>
+                        <ion-col>
+                            <ion-button fill="clear" expand="block" size="large" href="/favourites.html" ><ion-icon name="star-outline"></ion-icon></ion-button> 
+                        </ion-col>
+                        <ion-col>
+                            <ion-button fill="clear" expand="block" size="large" href="/watchlist.html" ><ion-icon name="clipboard-outline"></ion-icon></ion-button>
+                        </ion-col>
+                    </ion-row>
+                </ion-grid> 
+            </ion-toolbar>
+          </ion-footer>
+    </ion-app>
+    <script src="/JS/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+/* Info Page */ 
+.character-card{ 
+    height: 200px;
+}
+
+.info-poster-img{ 
+    height: 200px;
+}
+
+.title-btns{
+    margin-left: -10%;
+}
+
+.synopsis-para { 
+    font-size: medium; 
+    background-color: rgba(226, 224, 224, 0.212); 
+    padding-left: 5%; 
+    padding-top: 2%;
+    margin-top:-1%; 
+
+}
